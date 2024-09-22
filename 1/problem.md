@@ -1,6 +1,6 @@
 Problema: https://codeforces.com/contest/440/problem/D
 
-Solución aceptada en codeforces: https://codeforces.com/contest/440/submission/281917914
+Solución aceptada en codeforces: https://codeforces.com/contest/440/submission/282413740
 
 
 #Expicación del código
