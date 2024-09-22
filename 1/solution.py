@@ -27,6 +27,17 @@ dp = [[inf] * N for _ in range(N)]
 rebro = [[0] * N for _ in range(N)]
 answ = []
 
+def initialize():
+    global n, k, g, dpr, dp, rebro, answ, ans
+    n = 0
+    k = 0
+    g = defaultdict(list)
+    dpr = [[[] for _ in range(N)] for _ in range(N)]
+    dp = [[inf] * N for _ in range(N)]
+    rebro = [[0] * N for _ in range(N)]
+    answ = []
+    ans = inf
+
 # DFS (Depth-First Search)
 def dfs(v, p=0):
     global ans, answ
@@ -56,6 +67,7 @@ def dfs(v, p=0):
 # Main function to solve the problem
 def solve(n_,k_,edges):
     global n, k, ans
+    initialize()
 
     n, k = n_, k_
     index = 1
@@ -73,8 +85,8 @@ def solve(n_,k_,edges):
     ans = inf
     dfs(1)
 
-    print(len(answ))
-    print(' '.join(map(str, answ)))
+    return len(answ)
+
 
 
 
